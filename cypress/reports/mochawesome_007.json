@@ -1,0 +1,144 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-02-09T07:40:19.947Z",
+    "end": "2023-02-09T07:40:28.448Z",
+    "duration": 8501,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ba477461-7423-40f4-9682-82b7a8e4bab1",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Elements\\VerifyRadioButton.js",
+      "file": "cypress\\e2e\\Elements\\VerifyRadioButton.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "52ed3657-edb0-4c2b-b089-b4ed847ece80",
+          "title": "Radio Button Page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Open radio tab",
+              "fullTitle": "Radio Button Page Open radio tab",
+              "timedOut": null,
+              "duration": 3547,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "radioButton.openRadioButtonPage();\ncy.url().should('include', 'https://demoqa.com/radio-button');",
+              "err": {},
+              "uuid": "6b85a6f3-ee5d-4b05-9ad3-5706711f8386",
+              "parentUUID": "52ed3657-edb0-4c2b-b089-b4ed847ece80",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Select specific button in the radio button page",
+              "fullTitle": "Radio Button Page Select specific button in the radio button page",
+              "timedOut": null,
+              "duration": 1356,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "radioButton.selectRadioButton(this.RadioButtonData.radioButtonData);",
+              "err": {},
+              "uuid": "6f6390e8-9d57-4c48-b09f-2e6eea9a7f56",
+              "parentUUID": "52ed3657-edb0-4c2b-b089-b4ed847ece80",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Check \"No\" button is disabled",
+              "fullTitle": "Radio Button Page Check \"No\" button is disabled",
+              "timedOut": null,
+              "duration": 1153,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "radioButton.selectNoButton();",
+              "err": {},
+              "uuid": "1913c1ab-3c94-4f61-ae27-8dba79048256",
+              "parentUUID": "52ed3657-edb0-4c2b-b089-b4ed847ece80",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "6b85a6f3-ee5d-4b05-9ad3-5706711f8386",
+            "6f6390e8-9d57-4c48-b09f-2e6eea9a7f56",
+            "1913c1ab-3c94-4f61-ae27-8dba79048256"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6056,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "chats": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

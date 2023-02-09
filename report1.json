@@ -1,0 +1,697 @@
+{
+  "stats": {
+    "suites": 9,
+    "tests": 15,
+    "passes": 10,
+    "pending": 0,
+    "failures": 3,
+    "start": "2023-02-09T07:28:49.671Z",
+    "end": "2023-02-09T07:40:41.191Z",
+    "duration": 77316,
+    "testsRegistered": 15,
+    "passPercent": 66.66666666666667,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 2,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "28d2c511-180d-4a13-8b17-b091639774cc",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Elements\\VerifyRadioButton.js",
+      "file": "cypress\\e2e\\Elements\\VerifyRadioButton.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2831cfff-13df-44ba-b4df-152cb5dba581",
+          "title": "End To End",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Open radio tab",
+              "fullTitle": "End To End Open radio tab",
+              "timedOut": null,
+              "duration": 7089,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "radioButton.openRadioButtonPage();\ncy.url().should('include', 'https://demoqa.com/radio-button');",
+              "err": {},
+              "uuid": "47172749-8ddf-43c0-a31e-f1ba83027f28",
+              "parentUUID": "2831cfff-13df-44ba-b4df-152cb5dba581",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Select specific button in the radio button page",
+              "fullTitle": "End To End Select specific button in the radio button page",
+              "timedOut": null,
+              "duration": 3879,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "radioButton.selectRadioButton(this.RadioButtonData.radioButtonData);",
+              "err": {},
+              "uuid": "b479654c-bf33-4237-bb44-b20e45303582",
+              "parentUUID": "2831cfff-13df-44ba-b4df-152cb5dba581",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Check \"No\" button is disabled",
+              "fullTitle": "End To End Check \"No\" button is disabled",
+              "timedOut": null,
+              "duration": 2290,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "radioButton.selectNoButton();",
+              "err": {},
+              "uuid": "f31f94f8-4081-4b80-82f2-5668f178a99e",
+              "parentUUID": "2831cfff-13df-44ba-b4df-152cb5dba581",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "47172749-8ddf-43c0-a31e-f1ba83027f28",
+            "b479654c-bf33-4237-bb44-b20e45303582",
+            "f31f94f8-4081-4b80-82f2-5668f178a99e"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 13258,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "52ee285e-1f6c-41e1-9cee-352afa18b589",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Elements\\VerifyTextBox.js",
+      "file": "cypress\\e2e\\Elements\\VerifyTextBox.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "84d4357e-e134-423b-9d6b-d3d0db1ed50b",
+          "title": "End To End",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Text box page validation",
+              "fullTitle": "End To End Text box page validation",
+              "timedOut": null,
+              "duration": 16472,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "textBox.vaidateTextBox(this.textBoxData.name, this.textBoxData.email, this.textBoxData.currentAddress, this.textBoxData.permanentAddress);",
+              "err": {
+                "message": "CypressError: Timed out retrying after 4050ms: `cy.click()` failed because the center of this element is hidden from view:\n\n`<button id=\"submit\" type=\"button\" class=\"btn btn-primary\">Submit</button>`\n\nFix this problem, or use `{force: true}` to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
+                "estack": "CypressError: Timed out retrying after 4050ms: `cy.click()` failed because the center of this element is hidden from view:\n\n`<button id=\"submit\" type=\"button\" class=\"btn btn-primary\">Submit</button>`\n\nFix this problem, or use `{force: true}` to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at ensureIsDescendent (https://demoqa.com/__cypress/runner/cypress_runner.js:130233:74)\n    at ensureDescendents (https://demoqa.com/__cypress/runner/cypress_runner.js:130269:5)\n    at possiblyScrollMultipleTimes (https://demoqa.com/__cypress/runner/cypress_runner.js:130376:22)\n    at scrollContainers (https://demoqa.com/__cypress/runner/cypress_runner.js:130398:16)\n    at ensureDescendentsAndScroll (https://demoqa.com/__cypress/runner/cypress_runner.js:130402:14)\n    at ensureElIsNotCovered (https://demoqa.com/__cypress/runner/cypress_runner.js:130406:5)\n    at runAllChecks (https://demoqa.com/__cypress/runner/cypress_runner.js:130586:52)\n    at retryActionability (https://demoqa.com/__cypress/runner/cypress_runner.js:130623:16)\n    at tryCatcher (https://demoqa.com/__cypress/runner/cypress_runner.js:8914:23)\n    at Function.Promise.attempt.Promise.try (https://demoqa.com/__cypress/runner/cypress_runner.js:6188:29)\n    at whenStable (https://demoqa.com/__cypress/runner/cypress_runner.js:146724:65)\n    at <unknown> (https://demoqa.com/__cypress/runner/cypress_runner.js:146165:14)\n    at tryCatcher (https://demoqa.com/__cypress/runner/cypress_runner.js:8914:23)\n    at Promise._settlePromiseFromHandler (https://demoqa.com/__cypress/runner/cypress_runner.js:6849:31)\n    at Promise._settlePromise (https://demoqa.com/__cypress/runner/cypress_runner.js:6906:18)\n    at Promise._settlePromise0 (https://demoqa.com/__cypress/runner/cypress_runner.js:6951:10)\n    at Promise._settlePromises (https://demoqa.com/__cypress/runner/cypress_runner.js:7031:18)\n    at Promise._fulfill (https://demoqa.com/__cypress/runner/cypress_runner.js:6975:18)\n    at <unknown> (https://demoqa.com/__cypress/runner/cypress_runner.js:8589:46)\nFrom Your Spec Code:\n    at TextBoxPage.vaidateTextBox (webpack:///./cypress/PageObject/TextBoxPage.js:25:34)\n    at Context.eval (webpack:///./cypress/e2e/Elements/VerifyTextBox.js:19:16)",
+                "diff": null
+              },
+              "uuid": "c7765cfb-7f92-4b11-828a-a26131c40bb8",
+              "parentUUID": "84d4357e-e134-423b-9d6b-d3d0db1ed50b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "c7765cfb-7f92-4b11-828a-a26131c40bb8"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 16472,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "5c80d401-afb1-4c09-b582-faddf8b651ad",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Elements\\VerifyCheckBox.js",
+      "file": "cypress\\e2e\\Elements\\VerifyCheckBox.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4498afa0-a316-4a16-a75d-f736dc6962ec",
+          "title": "Check Box Page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Check box page validation",
+              "fullTitle": "Check Box Page Check box page validation",
+              "timedOut": null,
+              "duration": 7105,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "checkBox.validateCheckBox(this.checkBoxData.LengthOfHomeLength);\ncheckBox.selectElement(this.checkBoxData.DropDownData);",
+              "err": {},
+              "uuid": "eb51986d-5e11-446c-a779-49638d3e5be1",
+              "parentUUID": "4498afa0-a316-4a16-a75d-f736dc6962ec",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "eb51986d-5e11-446c-a779-49638d3e5be1"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 7105,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "d35bfaae-de85-4b9d-8eb3-2b1d2f2f42e0",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Elements\\VerifyRadioButton.js",
+      "file": "cypress\\e2e\\Elements\\VerifyRadioButton.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "657ab30a-6ef4-4a11-b883-cdecd2d524ab",
+          "title": "Radio Button Page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Open radio tab",
+              "fullTitle": "Radio Button Page Open radio tab",
+              "timedOut": null,
+              "duration": 5788,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "radioButton.openRadioButtonPage();\ncy.url().should('include', 'https://demoqa.com/radio-button');",
+              "err": {
+                "message": "Error: The following error originated from your application code, not from Cypress.\n\n  > Script error.\n\nCypress detected that an uncaught error was thrown from a cross origin script.\n\nWe cannot provide you the stack trace, line number, or file where this error occurred.\n\nCheck your Developer Tools Console for the actual error - it should be printed there.\n\nIt's possible to enable debugging these scripts by adding the `crossorigin` attribute and setting a CORS header.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nhttps://on.cypress.io/cross-origin-script-error\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Radio Button Page`",
+                "estack": "Error: The following error originated from your application code, not from Cypress.\n\n  > Script error.\n\nCypress detected that an uncaught error was thrown from a cross origin script.\n\nWe cannot provide you the stack trace, line number, or file where this error occurred.\n\nCheck your Developer Tools Console for the actual error - it should be printed there.\n\nIt's possible to enable debugging these scripts by adding the `crossorigin` attribute and setting a CORS header.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nhttps://on.cypress.io/cross-origin-script-error\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Radio Button Page`",
+                "diff": null
+              },
+              "uuid": "d28cd63b-7207-4bfc-9859-1dba20637556",
+              "parentUUID": "657ab30a-6ef4-4a11-b883-cdecd2d524ab",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Select specific button in the radio button page",
+              "fullTitle": "Radio Button Page Select specific button in the radio button page",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "radioButton.selectRadioButton(this.RadioButtonData.radioButtonData);",
+              "err": {},
+              "uuid": "62b2b1c9-4ca8-4b04-9095-e9c28558b580",
+              "parentUUID": "657ab30a-6ef4-4a11-b883-cdecd2d524ab",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Check \"No\" button is disabled",
+              "fullTitle": "Radio Button Page Check \"No\" button is disabled",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "radioButton.selectNoButton();",
+              "err": {},
+              "uuid": "92a49f1f-fd5d-493d-ab81-62055590112c",
+              "parentUUID": "657ab30a-6ef4-4a11-b883-cdecd2d524ab",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "d28cd63b-7207-4bfc-9859-1dba20637556"
+          ],
+          "pending": [],
+          "skipped": [
+            "62b2b1c9-4ca8-4b04-9095-e9c28558b580",
+            "92a49f1f-fd5d-493d-ab81-62055590112c"
+          ],
+          "duration": 5788,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "32d94802-6b55-4b18-adc2-5b52b3181e0b",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Elements\\VerifyTextBox.js",
+      "file": "cypress\\e2e\\Elements\\VerifyTextBox.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "71f41bbe-c55a-49ee-ac90-a943108c72aa",
+          "title": "Text Box Page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Text box page validation",
+              "fullTitle": "Text Box Page Text box page validation",
+              "timedOut": null,
+              "duration": 5398,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "textBox.vaidateTextBox(this.textBoxData.name, this.textBoxData.email, this.textBoxData.currentAddress, this.textBoxData.permanentAddress);",
+              "err": {
+                "message": "Error: The following error originated from your application code, not from Cypress.\n\n  > Script error.\n\nCypress detected that an uncaught error was thrown from a cross origin script.\n\nWe cannot provide you the stack trace, line number, or file where this error occurred.\n\nCheck your Developer Tools Console for the actual error - it should be printed there.\n\nIt's possible to enable debugging these scripts by adding the `crossorigin` attribute and setting a CORS header.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nhttps://on.cypress.io/cross-origin-script-error",
+                "estack": "Error: The following error originated from your application code, not from Cypress.\n\n  > Script error.\n\nCypress detected that an uncaught error was thrown from a cross origin script.\n\nWe cannot provide you the stack trace, line number, or file where this error occurred.\n\nCheck your Developer Tools Console for the actual error - it should be printed there.\n\nIt's possible to enable debugging these scripts by adding the `crossorigin` attribute and setting a CORS header.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nhttps://on.cypress.io/cross-origin-script-error",
+                "diff": null
+              },
+              "uuid": "6682bae0-cdf3-4895-97d6-a5e278d09151",
+              "parentUUID": "71f41bbe-c55a-49ee-ac90-a943108c72aa",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "6682bae0-cdf3-4895-97d6-a5e278d09151"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 5398,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "266a54cd-768a-4afe-b97f-a20400803d84",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Elements\\VerifyCheckBox.js",
+      "file": "cypress\\e2e\\Elements\\VerifyCheckBox.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0b9f746a-263a-446d-a6b5-b1e98fca4511",
+          "title": "Check Box Page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Check box page validation",
+              "fullTitle": "Check Box Page Check box page validation",
+              "timedOut": null,
+              "duration": 5456,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "checkBox.validateCheckBox(this.checkBoxData.LengthOfHomeLength);\ncheckBox.selectElement(this.checkBoxData.DropDownData);",
+              "err": {},
+              "uuid": "3aa4f71b-ff20-4f37-9681-18a932b8f4cf",
+              "parentUUID": "0b9f746a-263a-446d-a6b5-b1e98fca4511",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "3aa4f71b-ff20-4f37-9681-18a932b8f4cf"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5456,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "ba477461-7423-40f4-9682-82b7a8e4bab1",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Elements\\VerifyRadioButton.js",
+      "file": "cypress\\e2e\\Elements\\VerifyRadioButton.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "52ed3657-edb0-4c2b-b089-b4ed847ece80",
+          "title": "Radio Button Page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Open radio tab",
+              "fullTitle": "Radio Button Page Open radio tab",
+              "timedOut": null,
+              "duration": 3547,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "radioButton.openRadioButtonPage();\ncy.url().should('include', 'https://demoqa.com/radio-button');",
+              "err": {},
+              "uuid": "6b85a6f3-ee5d-4b05-9ad3-5706711f8386",
+              "parentUUID": "52ed3657-edb0-4c2b-b089-b4ed847ece80",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Select specific button in the radio button page",
+              "fullTitle": "Radio Button Page Select specific button in the radio button page",
+              "timedOut": null,
+              "duration": 1356,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "radioButton.selectRadioButton(this.RadioButtonData.radioButtonData);",
+              "err": {},
+              "uuid": "6f6390e8-9d57-4c48-b09f-2e6eea9a7f56",
+              "parentUUID": "52ed3657-edb0-4c2b-b089-b4ed847ece80",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Check \"No\" button is disabled",
+              "fullTitle": "Radio Button Page Check \"No\" button is disabled",
+              "timedOut": null,
+              "duration": 1153,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "radioButton.selectNoButton();",
+              "err": {},
+              "uuid": "1913c1ab-3c94-4f61-ae27-8dba79048256",
+              "parentUUID": "52ed3657-edb0-4c2b-b089-b4ed847ece80",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "6b85a6f3-ee5d-4b05-9ad3-5706711f8386",
+            "6f6390e8-9d57-4c48-b09f-2e6eea9a7f56",
+            "1913c1ab-3c94-4f61-ae27-8dba79048256"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6056,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "b9d39169-d906-4db4-a6d0-482bbdc89703",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Elements\\VerifyTextBox.js",
+      "file": "cypress\\e2e\\Elements\\VerifyTextBox.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "1621d152-21bd-428b-9f7d-7887f4ad7688",
+          "title": "Text Box Page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Text box page validation",
+              "fullTitle": "Text Box Page Text box page validation",
+              "timedOut": null,
+              "duration": 7452,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "textBox.vaidateTextBox(this.textBoxData.name, this.textBoxData.email, this.textBoxData.currentAddress, this.textBoxData.permanentAddress);",
+              "err": {},
+              "uuid": "bcb8d4c3-5f3c-4aa8-82b0-22adf29c8e78",
+              "parentUUID": "1621d152-21bd-428b-9f7d-7887f4ad7688",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "bcb8d4c3-5f3c-4aa8-82b0-22adf29c8e78"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 7452,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "5b61f29b-86ab-4eee-9b42-b5f351f8f241",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Elements\\VerifyCheckBox.js",
+      "file": "cypress\\e2e\\Elements\\VerifyCheckBox.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "9f0de026-ba7d-48c0-b521-5ab37631a414",
+          "title": "End To End",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Check box page validation",
+              "fullTitle": "End To End Check box page validation",
+              "timedOut": null,
+              "duration": 10331,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "checkBox.validateCheckBox(this.checkBoxData.LengthOfHomeLength);\ncheckBox.selectElement(this.checkBoxData.DropDownData);",
+              "err": {},
+              "uuid": "121c51d0-8a66-4bf7-9ca7-d822bae8d3d9",
+              "parentUUID": "9f0de026-ba7d-48c0-b521-5ab37631a414",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "121c51d0-8a66-4bf7-9ca7-d822bae8d3d9"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 10331,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "chats": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
