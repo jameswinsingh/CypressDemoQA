@@ -1,7 +1,13 @@
 {
+
+    "ExpectedURL":"https://demoqa.com/webtables",
     "name": [
-            "Cierra",
+            "Cierra", 
             "Alden",
             "Kierra"
-    ]
+            ],
+
+    "validateName": "Cierra",
+    "salary":"10000"
+
 }
