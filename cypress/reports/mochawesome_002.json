@@ -5,66 +5,86 @@
     "passes": 0,
     "pending": 0,
     "failures": 1,
-    "start": "2023-02-09T07:29:48.398Z",
-    "end": "2023-02-09T07:30:07.819Z",
-    "duration": 19421,
-    "testsRegistered": 1,
+    "start": "2023-02-13T09:20:11.750Z",
+    "end": "2023-02-13T09:20:21.542Z",
+    "duration": 9792,
+    "testsRegistered": 2,
     "passPercent": 0,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
-    "skipped": 0,
-    "hasSkipped": false
+    "skipped": 1,
+    "hasSkipped": true
   },
   "results": [
     {
-      "uuid": "52ee285e-1f6c-41e1-9cee-352afa18b589",
+      "uuid": "c60d68ea-19d9-4615-b64d-2b84d0fec51f",
       "title": "",
-      "fullFile": "cypress\\e2e\\Elements\\VerifyTextBox.js",
-      "file": "cypress\\e2e\\Elements\\VerifyTextBox.js",
+      "fullFile": "cypress\\e2e\\Elements\\VerifyLinks.js",
+      "file": "cypress\\e2e\\Elements\\VerifyLinks.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "84d4357e-e134-423b-9d6b-d3d0db1ed50b",
-          "title": "End To End",
+          "uuid": "7fb834e1-2e78-44be-9785-2b563457fa84",
+          "title": "Link Page",
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
           "afterHooks": [],
           "tests": [
             {
-              "title": "Text box page validation",
-              "fullTitle": "End To End Text box page validation",
+              "title": "Validate URL",
+              "fullTitle": "Link Page Validate URL",
               "timedOut": null,
-              "duration": 16472,
+              "duration": 7115,
               "state": "failed",
               "speed": null,
               "pass": false,
               "fail": true,
               "pending": false,
               "context": null,
-              "code": "textBox.vaidateTextBox(this.textBoxData.name, this.textBoxData.email, this.textBoxData.currentAddress, this.textBoxData.permanentAddress);",
+              "code": "link.openLinkPage();\ncy.url().should('include', this.linksPageData.ExpectedURL);",
               "err": {
-                "message": "CypressError: Timed out retrying after 4050ms: `cy.click()` failed because the center of this element is hidden from view:\n\n`<button id=\"submit\" type=\"button\" class=\"btn btn-primary\">Submit</button>`\n\nFix this problem, or use `{force: true}` to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
-                "estack": "CypressError: Timed out retrying after 4050ms: `cy.click()` failed because the center of this element is hidden from view:\n\n`<button id=\"submit\" type=\"button\" class=\"btn btn-primary\">Submit</button>`\n\nFix this problem, or use `{force: true}` to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at ensureIsDescendent (https://demoqa.com/__cypress/runner/cypress_runner.js:130233:74)\n    at ensureDescendents (https://demoqa.com/__cypress/runner/cypress_runner.js:130269:5)\n    at possiblyScrollMultipleTimes (https://demoqa.com/__cypress/runner/cypress_runner.js:130376:22)\n    at scrollContainers (https://demoqa.com/__cypress/runner/cypress_runner.js:130398:16)\n    at ensureDescendentsAndScroll (https://demoqa.com/__cypress/runner/cypress_runner.js:130402:14)\n    at ensureElIsNotCovered (https://demoqa.com/__cypress/runner/cypress_runner.js:130406:5)\n    at runAllChecks (https://demoqa.com/__cypress/runner/cypress_runner.js:130586:52)\n    at retryActionability (https://demoqa.com/__cypress/runner/cypress_runner.js:130623:16)\n    at tryCatcher (https://demoqa.com/__cypress/runner/cypress_runner.js:8914:23)\n    at Function.Promise.attempt.Promise.try (https://demoqa.com/__cypress/runner/cypress_runner.js:6188:29)\n    at whenStable (https://demoqa.com/__cypress/runner/cypress_runner.js:146724:65)\n    at <unknown> (https://demoqa.com/__cypress/runner/cypress_runner.js:146165:14)\n    at tryCatcher (https://demoqa.com/__cypress/runner/cypress_runner.js:8914:23)\n    at Promise._settlePromiseFromHandler (https://demoqa.com/__cypress/runner/cypress_runner.js:6849:31)\n    at Promise._settlePromise (https://demoqa.com/__cypress/runner/cypress_runner.js:6906:18)\n    at Promise._settlePromise0 (https://demoqa.com/__cypress/runner/cypress_runner.js:6951:10)\n    at Promise._settlePromises (https://demoqa.com/__cypress/runner/cypress_runner.js:7031:18)\n    at Promise._fulfill (https://demoqa.com/__cypress/runner/cypress_runner.js:6975:18)\n    at <unknown> (https://demoqa.com/__cypress/runner/cypress_runner.js:8589:46)\nFrom Your Spec Code:\n    at TextBoxPage.vaidateTextBox (webpack:///./cypress/PageObject/TextBoxPage.js:25:34)\n    at Context.eval (webpack:///./cypress/e2e/Elements/VerifyTextBox.js:19:16)",
+                "message": "Error: The following error originated from your application code, not from Cypress.\n\n  > Script error.\n\nCypress detected that an uncaught error was thrown from a cross origin script.\n\nWe cannot provide you the stack trace, line number, or file where this error occurred.\n\nCheck your Developer Tools Console for the actual error - it should be printed there.\n\nIt's possible to enable debugging these scripts by adding the `crossorigin` attribute and setting a CORS header.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nhttps://on.cypress.io/cross-origin-script-error\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Link Page`",
+                "estack": "Error: The following error originated from your application code, not from Cypress.\n\n  > Script error.\n\nCypress detected that an uncaught error was thrown from a cross origin script.\n\nWe cannot provide you the stack trace, line number, or file where this error occurred.\n\nCheck your Developer Tools Console for the actual error - it should be printed there.\n\nIt's possible to enable debugging these scripts by adding the `crossorigin` attribute and setting a CORS header.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nhttps://on.cypress.io/cross-origin-script-error\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Link Page`",
                 "diff": null
               },
-              "uuid": "c7765cfb-7f92-4b11-828a-a26131c40bb8",
-              "parentUUID": "84d4357e-e134-423b-9d6b-d3d0db1ed50b",
+              "uuid": "78350e84-cdbd-4ff3-8f9c-51b3a3a69cad",
+              "parentUUID": "7fb834e1-2e78-44be-9785-2b563457fa84",
               "isHook": false,
               "skipped": false
+            },
+            {
+              "title": "Click on Home to open new tab",
+              "fullTitle": "Link Page Click on Home to open new tab",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "link.Home(this.linksPageData.ChildTabURL);",
+              "err": {},
+              "uuid": "fd017ad1-5160-45c5-a3c9-8bf0ccee5b1e",
+              "parentUUID": "7fb834e1-2e78-44be-9785-2b563457fa84",
+              "isHook": false,
+              "skipped": true
             }
           ],
           "suites": [],
           "passes": [],
           "failures": [
-            "c7765cfb-7f92-4b11-828a-a26131c40bb8"
+            "78350e84-cdbd-4ff3-8f9c-51b3a3a69cad"
           ],
           "pending": [],
-          "skipped": [],
-          "duration": 16472,
+          "skipped": [
+            "fd017ad1-5160-45c5-a3c9-8bf0ccee5b1e"
+          ],
+          "duration": 7115,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

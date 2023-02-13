@@ -1,66 +1,113 @@
 {
   "stats": {
     "suites": 1,
-    "tests": 1,
-    "passes": 1,
+    "tests": 2,
+    "passes": 0,
     "pending": 0,
-    "failures": 0,
-    "start": "2023-02-09T07:34:15.960Z",
-    "end": "2023-02-09T07:34:25.921Z",
-    "duration": 9961,
-    "testsRegistered": 1,
-    "passPercent": 100,
+    "failures": 2,
+    "start": "2023-02-13T09:20:27.575Z",
+    "end": "2023-02-13T09:20:41.372Z",
+    "duration": 13797,
+    "testsRegistered": 3,
+    "passPercent": 0,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
-    "skipped": 0,
-    "hasSkipped": false
+    "skipped": 1,
+    "hasSkipped": true
   },
   "results": [
     {
-      "uuid": "5c80d401-afb1-4c09-b582-faddf8b651ad",
+      "uuid": "5c507e08-9dd8-4a9e-9cec-5f9334f7adac",
       "title": "",
-      "fullFile": "cypress\\e2e\\Elements\\VerifyCheckBox.js",
-      "file": "cypress\\e2e\\Elements\\VerifyCheckBox.js",
+      "fullFile": "cypress\\e2e\\Elements\\VerifyRadioButton.js",
+      "file": "cypress\\e2e\\Elements\\VerifyRadioButton.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "4498afa0-a316-4a16-a75d-f736dc6962ec",
-          "title": "Check Box Page",
+          "uuid": "83b47cf3-eb52-4cec-b767-c332c613c316",
+          "title": "Radio Button Page",
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
           "afterHooks": [],
           "tests": [
             {
-              "title": "Check box page validation",
-              "fullTitle": "Check Box Page Check box page validation",
+              "title": "Open radio tab",
+              "fullTitle": "Radio Button Page Open radio tab",
               "timedOut": null,
-              "duration": 7105,
-              "state": "passed",
-              "speed": "medium",
-              "pass": true,
+              "duration": 8253,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "radioButton.openRadioButtonPage();\ncy.url().should('include', 'https://demoqa.com/radio-button');",
+              "err": {
+                "message": "Error: The following error originated from your application code, not from Cypress.\n\n  > Script error.\n\nCypress detected that an uncaught error was thrown from a cross origin script.\n\nWe cannot provide you the stack trace, line number, or file where this error occurred.\n\nCheck your Developer Tools Console for the actual error - it should be printed there.\n\nIt's possible to enable debugging these scripts by adding the `crossorigin` attribute and setting a CORS header.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nhttps://on.cypress.io/cross-origin-script-error",
+                "estack": "Error: The following error originated from your application code, not from Cypress.\n\n  > Script error.\n\nCypress detected that an uncaught error was thrown from a cross origin script.\n\nWe cannot provide you the stack trace, line number, or file where this error occurred.\n\nCheck your Developer Tools Console for the actual error - it should be printed there.\n\nIt's possible to enable debugging these scripts by adding the `crossorigin` attribute and setting a CORS header.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nhttps://on.cypress.io/cross-origin-script-error",
+                "diff": null
+              },
+              "uuid": "f3b61324-ae24-461a-9c0c-286b1b7f6d79",
+              "parentUUID": "83b47cf3-eb52-4cec-b767-c332c613c316",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Select specific button in the radio button page",
+              "fullTitle": "Radio Button Page Select specific button in the radio button page",
+              "timedOut": null,
+              "duration": 2421,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "radioButton.selectRadioButton(this.RadioButtonData.radioButtonData);",
+              "err": {
+                "message": "Error: The following error originated from your application code, not from Cypress.\n\n  > Script error.\n\nCypress detected that an uncaught error was thrown from a cross origin script.\n\nWe cannot provide you the stack trace, line number, or file where this error occurred.\n\nCheck your Developer Tools Console for the actual error - it should be printed there.\n\nIt's possible to enable debugging these scripts by adding the `crossorigin` attribute and setting a CORS header.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nhttps://on.cypress.io/cross-origin-script-error\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Radio Button Page`",
+                "estack": "Error: The following error originated from your application code, not from Cypress.\n\n  > Script error.\n\nCypress detected that an uncaught error was thrown from a cross origin script.\n\nWe cannot provide you the stack trace, line number, or file where this error occurred.\n\nCheck your Developer Tools Console for the actual error - it should be printed there.\n\nIt's possible to enable debugging these scripts by adding the `crossorigin` attribute and setting a CORS header.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nhttps://on.cypress.io/cross-origin-script-error\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Radio Button Page`",
+                "diff": null
+              },
+              "uuid": "26338ade-cc99-47cd-9ac4-93ea68f774c4",
+              "parentUUID": "83b47cf3-eb52-4cec-b767-c332c613c316",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Check \"No\" button is disabled",
+              "fullTitle": "Radio Button Page Check \"No\" button is disabled",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "checkBox.validateCheckBox(this.checkBoxData.LengthOfHomeLength);\ncheckBox.selectElement(this.checkBoxData.DropDownData);",
+              "code": "radioButton.selectNoButton();",
               "err": {},
-              "uuid": "eb51986d-5e11-446c-a779-49638d3e5be1",
-              "parentUUID": "4498afa0-a316-4a16-a75d-f736dc6962ec",
+              "uuid": "fd310a05-1648-4fd8-b572-c977f95eeb35",
+              "parentUUID": "83b47cf3-eb52-4cec-b767-c332c613c316",
               "isHook": false,
-              "skipped": false
+              "skipped": true
             }
           ],
           "suites": [],
-          "passes": [
-            "eb51986d-5e11-446c-a779-49638d3e5be1"
+          "passes": [],
+          "failures": [
+            "f3b61324-ae24-461a-9c0c-286b1b7f6d79",
+            "26338ade-cc99-47cd-9ac4-93ea68f774c4"
           ],
-          "failures": [],
           "pending": [],
-          "skipped": [],
-          "duration": 7105,
+          "skipped": [
+            "fd310a05-1648-4fd8-b572-c977f95eeb35"
+          ],
+          "duration": 10674,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

@@ -1,15 +1,15 @@
 {
   "stats": {
-    "suites": 1,
+    "suites": 0,
     "tests": 1,
-    "passes": 1,
+    "passes": 0,
     "pending": 0,
-    "failures": 0,
-    "start": "2023-02-09T07:28:49.671Z",
-    "end": "2023-02-09T07:29:06.519Z",
-    "duration": 16848,
+    "failures": 1,
+    "start": "2023-02-13T09:19:49.533Z",
+    "end": "2023-02-13T09:19:49.923Z",
+    "duration": 390,
     "testsRegistered": 1,
-    "passPercent": 100,
+    "passPercent": 0,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,61 +18,46 @@
   },
   "results": [
     {
-      "uuid": "5b61f29b-86ab-4eee-9b42-b5f351f8f241",
+      "uuid": "d5e11d77-ea26-435b-b084-d12c2603d349",
       "title": "",
-      "fullFile": "cypress\\e2e\\Elements\\VerifyCheckBox.js",
-      "file": "cypress\\e2e\\Elements\\VerifyCheckBox.js",
+      "fullFile": "cypress\\e2e\\Elements\\VerifyBrokenLjnks.js",
+      "file": "cypress\\e2e\\Elements\\VerifyBrokenLjnks.js",
       "beforeHooks": [],
       "afterHooks": [],
-      "tests": [],
-      "suites": [
+      "tests": [
         {
-          "uuid": "9f0de026-ba7d-48c0-b521-5ab37631a414",
-          "title": "End To End",
-          "fullFile": "",
-          "file": "",
-          "beforeHooks": [],
-          "afterHooks": [],
-          "tests": [
-            {
-              "title": "Check box page validation",
-              "fullTitle": "End To End Check box page validation",
-              "timedOut": null,
-              "duration": 10331,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "checkBox.validateCheckBox(this.checkBoxData.LengthOfHomeLength);\ncheckBox.selectElement(this.checkBoxData.DropDownData);",
-              "err": {},
-              "uuid": "121c51d0-8a66-4bf7-9ca7-d822bae8d3d9",
-              "parentUUID": "9f0de026-ba7d-48c0-b521-5ab37631a414",
-              "isHook": false,
-              "skipped": false
-            }
-          ],
-          "suites": [],
-          "passes": [
-            "121c51d0-8a66-4bf7-9ca7-d822bae8d3d9"
-          ],
-          "failures": [],
-          "pending": [],
-          "skipped": [],
-          "duration": 10331,
-          "root": false,
-          "rootEmpty": false,
-          "_timeout": 2000
+          "title": "An uncaught error was detected outside of a test",
+          "fullTitle": "An uncaught error was detected outside of a test",
+          "timedOut": null,
+          "duration": 331,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": null,
+          "code": "throw err;",
+          "err": {
+            "message": "CypressError: The following error originated from your test code, not from Cypress.\n\n  > Cannot call `cy.fixture()` outside a running test.\n\nThis usually happens when you accidentally write commands outside an `it(...)` test.\n\nIf that is the case, just move these commands inside an `it(...)` test.\n\nCheck your test file for errors.\n\nWhen Cypress detects uncaught errors originating from your test code it will automatically fail the current test.\n\nCypress could not associate this error to any specific test.\n\nWe dynamically generated a new test to display this failure.\n\nhttps://on.cypress.io/cannot-execute-commands-outside-test",
+            "estack": "CypressError: The following error originated from your test code, not from Cypress.\n\n  > Cannot call `cy.fixture()` outside a running test.\n\nThis usually happens when you accidentally write commands outside an `it(...)` test.\n\nIf that is the case, just move these commands inside an `it(...)` test.\n\nCheck your test file for errors.\n\nWhen Cypress detects uncaught errors originating from your test code it will automatically fail the current test.\n\nCypress could not associate this error to any specific test.\n\nWe dynamically generated a new test to display this failure.\n\nhttps://on.cypress.io/cannot-execute-commands-outside-test\n    at ensureRunnable (http://localhost:63534/__cypress/runner/cypress_runner.js:150674:66)\n    at cy.<computed> [as fixture] (http://localhost:63534/__cypress/runner/cypress_runner.js:151151:7)\n    at Object.create (http://localhost:63534/__cypress/runner/cypress_runner.js:100474:19)\n    at context.describe.context.context (http://localhost:63534/__cypress/runner/cypress_runner.js:100250:27)\n    at createRunnable (http://localhost:63534/__cypress/runner/cypress_runner.js:156087:31)\n    at <unknown> (http://localhost:63534/__cypress/runner/cypress_runner.js:156148:14)\n    at <unknown> (http://localhost:63534/__cypress/runner/cypress_runner.js:158803:23)\n    at tryCatcher (http://localhost:63534/__cypress/runner/cypress_runner.js:8914:23)\n    at Object.gotValue (http://localhost:63534/__cypress/runner/cypress_runner.js:8056:18)\n    at Object.gotAccum (http://localhost:63534/__cypress/runner/cypress_runner.js:8045:25)\n    at Object.tryCatcher (http://localhost:63534/__cypress/runner/cypress_runner.js:8914:23)\n    at Promise._settlePromiseFromHandler (http://localhost:63534/__cypress/runner/cypress_runner.js:6849:31)\n    at Promise._settlePromise (http://localhost:63534/__cypress/runner/cypress_runner.js:6906:18)\n    at Promise._settlePromise0 (http://localhost:63534/__cypress/runner/cypress_runner.js:6951:10)\n    at Promise._settlePromises (http://localhost:63534/__cypress/runner/cypress_runner.js:7031:18)\n    at _drainQueueStep (http://localhost:63534/__cypress/runner/cypress_runner.js:3621:12)\n    at _drainQueue (http://localhost:63534/__cypress/runner/cypress_runner.js:3614:9)\n    at ../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:63534/__cypress/runner/cypress_runner.js:3630:5)\n    at Async.drainQueues (http://localhost:63534/__cypress/runner/cypress_runner.js:3500:14)",
+            "diff": null
+          },
+          "uuid": "cbe168d4-5e0d-4314-8ead-274eb25e8235",
+          "parentUUID": "d5e11d77-ea26-435b-b084-d12c2603d349",
+          "isHook": false,
+          "skipped": false
         }
       ],
+      "suites": [],
       "passes": [],
-      "failures": [],
+      "failures": [
+        "cbe168d4-5e0d-4314-8ead-274eb25e8235"
+      ],
       "pending": [],
       "skipped": [],
-      "duration": 0,
+      "duration": 331,
       "root": true,
-      "rootEmpty": true,
+      "rootEmpty": false,
       "_timeout": 2000
     }
   ],
