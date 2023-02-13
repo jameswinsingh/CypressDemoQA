@@ -1,9 +1,8 @@
 /// <reference types="cypress"/>
-import { func } from 'assert-plus';
 import 'cypress-xpath'
 import { WebTablePage } from '../../PageObject/WebTablePage';
 
-describe('Radio Button Page',  function() {
+describe('Web Table Page',  function() {
 
     let webTable = new WebTablePage();
 
@@ -18,15 +17,15 @@ beforeEach(function()
   it("Validate URL", function()
   {
     webTable.openWebTable()
+    cy.url().should('include',this.webTableData.ExpectedURL)
   })
 
 
-
-    it('Verify Salary', function() {
+  it('Verify Salary', function() {
        
-        webTable.printSalary(this.webTableData.name)
+    webTable.printSalary(this.webTableData.name, this.webTableData.validateName, this.webTableData.salary)
 
-    })
+  })
     
 
     
